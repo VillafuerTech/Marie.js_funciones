@@ -1,0 +1,35 @@
+/El programa toma el numero que esta en el AC y lo divide para 10 y lo guarda en el resultado
+Jump Inicio
+Entrada, Dec 0
+
+
+Inicio, Input
+Store Entrada
+JnS FuncionDividirParaDiez
+Load ResultadoDivision
+Output
+Halt
+
+
+FuncionDividirParaDiez, Hex 0
+Store NumeroADividir
+
+LoopDividir, Load NumeroADividir
+Subt Diez
+Skipcond 400
+Jump ComprobarPositivo
+Jump ContinuarDivision
+ComprobarPositivo, Skipcond 800
+JumpI FuncionDividirParaDiez
+
+ContinuarDivision, Store NumeroADividir
+Load ResultadoDivision
+Add Uno
+Store ResultadoDivision
+Jump LoopDividir
+
+
+NumeroADividir, Dec 0
+ResultadoDivision, Dec 0
+Uno, Dec 1
+Diez, Dec 10
