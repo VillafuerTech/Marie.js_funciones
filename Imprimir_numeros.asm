@@ -1,11 +1,11 @@
             ORG 100
 
             /***********************
-             * Programa para imprimir cualquier número en MARIE
-             * Este programa lee un número entero ingresado por el usuario
-             * y lo imprime dígito por dígito utilizando llamadas a subrutinas.
-             * Soporta números de hasta 5 dígitos.
-             ***********************/
+            / * Programa para imprimir cualquier número en MARIE
+            / * Este programa lee un número entero ingresado por el usuario
+            / * y lo imprime dígito por dígito utilizando llamadas a subrutinas.
+            / * Soporta números de hasta 5 dígitos.
+            / ***********************/
 
             / Leer el número de entrada y preparar variables
             Input                   
